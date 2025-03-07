@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       {/* <Home /> */}
+      {/* Tradetional way of api call */}
       <PostsTradetional />
     </>
   );
