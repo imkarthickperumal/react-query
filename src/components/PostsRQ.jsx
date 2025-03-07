@@ -8,7 +8,9 @@ const PostsRQ = () => {
     queryFn: () => {
       return axios.get("http://localhost:4000/posts");
     },
-    staleTime: 30000,
+    // staleTime: 30000, // staleTime
+    refetchInterval: 1000,
+    refetchIntervalInBackground: true,
   });
 
   console.log({ isLoading, isFetching });
