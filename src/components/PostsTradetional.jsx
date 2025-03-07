@@ -30,11 +30,11 @@ const PostsTradetional = () => {
   }
 
   return (
-    <div>
+    <div className="post-list">
       {posts.map((post) => (
-        <div key={post.id}>
-          <h3>{post.title}</h3>
-          <p>{post.body}</p>
+        <div className="post-item" key={post.id}>
+          <h3 className="post-title">{post.title}</h3>
+          <p className="post-body">{post.body}</p>
         </div>
       ))}
     </div>
