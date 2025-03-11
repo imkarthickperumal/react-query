@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import PostsTradetional from './components/PostsTradetional';
 import PostsRQ from './components/PostsRQ';
+import PostDetailsRQ from './components/PostDetailsRQ';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/posts' element={<PostsTradetional />} />
           <Route exact path='/rq-posts' element={<PostsRQ />} />
+          <Route exact path='/rq-posts/:postId' element={<PostDetailsRQ />} />
         </Routes>
       </div>
     </BrowserRouter>
